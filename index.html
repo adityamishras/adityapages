@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>adityapages-Aditya Portfilio</title>
+    <link rel="shortcut icon" href="images/aditya.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e362ff8530.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navigationbar">
+      <div class="nav">
+        <img src="images/menu.png" alt="" class="menubtn" onclick="Menubtn()" />
+        <img src="images/aditya.png" alt="" class="logo" />
+        <ul id="MenuItems" class="navlinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--  Main Section -->
+    <section>
+      <div class="row">
+        <div class="col">
+          <div class="text">
+            Hi, My name is <span>Aditya Mishra</span> <br />and i am a
+            passionate
+            <div><span id="element"></span></div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="images/programmers.png" alt="" class="programmer" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="container">
+            <div class="button"><a href="#">Downlaod CV</a></div>
+            <div class="button"><a href="#">Contact Me</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Introduction Section -->
+    <section class="introduction" id="About">
+      <h1><span>About</span> MySelf</h1>
+      <div class="row">
+        <div class="col">
+          <p>
+            Love to Code because it taught me not to give up ever. Trying my
+            best to proide companies and organization with best modern
+            technologies and serving users contemporary feel in their phone and
+            digital devices along best material of coding and languages I fell
+            in love with Development and coding and I have learned Several
+            things.<br />
+            I am Skilled in <span>Front-end fundamental technologies.</span>
+            <br />My field of intrest's are building Differents types of
+            <span>Web Technologies and Products.</span>
+          </p>
+        </div>
+        <div class="col">
+          <img
+            src="avatar.5852f40fbb38aa284829fa3fb7722225.svg"
+            alt=""
+            id="Avatar"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="col">
+          <div class="skills">
+            <h2><span>Skills</span></h2>
+            <div class="overview">
+              <h3><span>UI\UX</span></h3>
+              <h4>Designing Web/App interfaces</h4>
+              <h3><span>Web Developement</span></h3>
+              <h4>Web App Developement</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="skills">
+            <h2><span>Experience</span></h2>
+            <div class="overview">
+              <h3><span>2022-2023</span></h3>
+              <h4>Web-Designing at Computer Zone Education Center</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="skills">
+            <h2><span>Education</span></h2>
+            <div class="overview">
+              <h3><span>2022-2026</span></h3>
+              <h4>
+                Bachlors Of Technology in Computer Science Under Punjab
+                Technical University.
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contcat Section -->
+    <section id="contact">
+      <h1><span>Contact</span> Me</h1>
+      <div class="row">
+        <div class="col">
+          <p>@adityakumarsmishra@gmail.com</p>
+          <p>0987609876</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-text">
+        <p>&copy; Designed & Developed by Aditya Mishra</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "<b> Web Developer</b>.",
+          " <b> Content Creater. </b>",
+          " <b> Web Designer. </b>",
+          "<b> Web Developer</b>.",
+          " <b> Content Creater. </b>",
+          " <b> Web Designer. </b>",
+        ],
+        typeSpeed: 40,
+      });
+    </script>
+    <script>
+      var Menuitems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function Menubtn() {
+        if (Menuitems.style.maxHeight == "0px") {
+          Menuitems.style.maxHeight = "400px";
+        } else {
+          Menuitems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxpAhPet9S8ZyYK76ok9npuPBg8Y4N4zmMtxZ951MMpBmbHNb2V4EDgBAaFn8WQjm_Otg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>

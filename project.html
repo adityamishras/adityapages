@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>adityapages-Aditya Portfilio</title>
+    <link rel="shortcut icon" href="images/aditya.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e362ff8530.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navigationbar">
+      <div class="nav">
+        <img src="images/menu.png" alt="" class="menubtn" onclick="Menubtn()" />
+        <img src="images/aditya.png" alt="" class="logo" />
+        <ul id="MenuItems" class="navlinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--  Main Section -->
+    <section class="projectsection">
+      <div class="row">
+        <div class="col">
+          <div class="image-wrapper">
+            <img src="images\EcommerceWebsiteThumbnail.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h2>E-Commerce Website</h2>
+            <small>description goes here</small>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              modi expedita numquam, amet enim cupiditate eius officia unde.
+              Nemo quas ipsum deserunt debitis, est commodi sint quasi quis quos
+              distinctio?
+            </p>
+            <li><a href="#">Read more</a></li>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="image-wrapper">
+            <img src="images\EcommerceWebsiteThumbnail.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h2>E-Commerce Website</h2>
+            <small>description goes here</small>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              modi expedita numquam, amet enim cupiditate eius officia unde.
+              Nemo quas ipsum deserunt debitis, est commodi sint quasi quis quos
+              distinctio?
+            </p>
+            <li><a href="#">Read more</a></li>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="image-wrapper">
+            <img src="images\EcommerceWebsiteThumbnail.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h2>E-Commerce Website</h2>
+            <small>description goes here</small>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              modi expedita numquam, amet enim cupiditate eius officia unde.
+              Nemo quas ipsum deserunt debitis, est commodi sint quasi quis quos
+              distinctio?
+            </p>
+            <li><a href="#">Read more</a></li>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-text">
+        <p>&copy; Designed & Developed by Aditya Mishra</p>
+      </div>
+    </footer>
+
+    <script>
+      var Menuitems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function Menubtn() {
+        if (Menuitems.style.maxHeight == "0px") {
+          Menuitems.style.maxHeight = "400px";
+        } else {
+          Menuitems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
