@@ -65,9 +65,22 @@ span {
   }
 }
 @media (max-width: 480px) {
+  .nav {
+    background-color: #eb5e28;
+  }
+  .logo {
+    height: 40px;
+    width: 40px;
+    margin: 20px 30px;
+    position: fixed;
+    right: 20px;
+    top: 5px;
+  }
   .menubtn {
     display: block;
     margin: 32px 90px 0 0;
+    position: fixed;
+    left: 62px;
   }
   .navlinks {
     position: absolute;
@@ -78,6 +91,7 @@ span {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    position: fixed;
   }
   .navlinks li {
     display: block;
@@ -88,10 +102,10 @@ span {
   justify-content: center;
 }
 .button {
-  height: 50px;
+  height: 44px;
   width: 161px;
   text-align: center;
-  padding-top: 13px;
+  padding-top: 10px;
   background: #eb5e28;
   margin: 10px;
   border-radius: 28px;
@@ -106,15 +120,11 @@ span {
   .container {
     flex-wrap: wrap;
   }
-  .menubtn {
-    display: block;
-    margin: 32px 90px 0 0;
-  }
 }
 
 /* Introduction / About section */
 .introduction {
-  margin: 60px 0;
+  margin: 90px 0 50px 0;
 }
 .introduction h1 {
   text-align: center;
@@ -144,35 +154,35 @@ span {
   }
 }
 
-.skills{
+.skills {
   text-align: left;
   border: 1px solid #eb5e28;
   border-radius: 10px;
   padding: 20px;
 }
-.skills .overview{
+.skills .overview {
   margin-top: 10px;
   line-height: 23px;
 }
-.skills .overview h3{
+.skills .overview h3 {
   margin-top: 10px;
   line-height: 23px;
 }
-@media (max-width:1199px) {
- .row{
-  flex-wrap: wrap;
-  gap: 40px;
- }
- .col{
-  flex-basis: 70%;
- }
+@media (max-width: 1199px) {
+  .row {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .col {
+    flex-basis: 70%;
+  }
 }
 
 /* Contcat Section */
-#contact{
+#contact {
   margin: 30px 10px;
 }
-#contact h1{
+#contact h1 {
   text-align: center;
   margin: 50px 0;
 }
@@ -180,79 +190,81 @@ span {
   display: flex;
   justify-content: center;
 }
-#contact .row .col{
+#contact .row .col {
   text-align: left;
   margin-right: 20px;
 }
-.social-icons{
+.social-icons {
   padding: 10px 0;
 }
-.fa-brands{
+.fa-brands {
   font-size: 30px;
   margin-right: 10px;
   color: #219ebc;
 }
-form{
+form {
   padding: 10px 0;
 }
-input{
+input {
   margin: 0 0 10px 0;
   height: 40px;
   width: 250px;
   padding-left: 10px;
 }
-textarea{
+textarea {
   width: 250px;
   padding: 10px 10px;
 }
-input:focus{
+input:focus {
   outline: none;
 }
-textarea:focus{
+textarea:focus {
   outline: none;
 }
-button{
+button {
   height: 30px;
   width: 100px;
   background: #eb5e28;
   border: none;
   border-radius: 20px;
 }
-button:hover{
+button:hover {
   background: #fca311;
 }
-#msg{
+button:focus {
+  outline: none;
+}
+#msg {
   color: rgb(16, 39, 16);
   font-weight: bold;
 }
-@media (max-width:1199px) {
-  #contact{
+@media (max-width: 1199px) {
+  #contact {
     margin: 30px 0px;
   }
   #contact .row {
     flex-wrap: wrap;
   }
-  #contact .row .col{
+  #contact .row .col {
     flex-basis: 50px;
   }
- }
- @media (max-width:769px) {
-  #contact{
+}
+@media (max-width: 769px) {
+  #contact {
     margin: 30px 0px;
   }
   #contact .row {
     flex-wrap: wrap;
   }
-  #contact .row .col{
+  #contact .row .col {
     flex-basis: 100px;
     text-align: right;
   }
- }
-
+}
 
 /* footer */
-.footer{
-   text-align: center;
+.footer {
+  text-align: center;
 }
 .footer .footer-text {
   text-align: center;
@@ -260,10 +272,9 @@ button:hover{
   font-size: 17px;
 }
 
-
 /* project page Css Is written Here */
 .projectsection {
-  margin: 30px 0;
+  margin: 60px 0;
 }
 .projectsection .row {
   flex-wrap: wrap;
@@ -286,16 +297,19 @@ button:hover{
 }
 .details {
   padding: 10px;
+  text-align: left;
+  line-height: 25px;
 }
 .details li {
   height: 35px;
   width: 115px;
   background-color: #252422;
   padding: 5px 0;
+  margin-top: 10px ;
   text-align: center;
   border-radius: 30px;
 }
-.details li:hover{
+.details li:hover {
   background-color: #eb5e28;
   cursor: pointer;
 }
@@ -303,7 +317,7 @@ button:hover{
   font-size: 14px;
   color: white;
 }
-@media (max-width:1199px) {
+@media (max-width: 1199px) {
   .projectsection .row {
     flex-wrap: wrap;
   }
@@ -312,7 +326,7 @@ button:hover{
     gap: 10px;
   }
 }
-@media (max-width:766px) {
+@media (max-width: 766px) {
   .projectsection .row {
     flex-wrap: wrap;
   }
@@ -320,4 +334,141 @@ button:hover{
     flex-basis: 80%;
     gap: 10px;
   }
+  .image-wrapper:hover img {
+    transform: none;
+  }
 }
+
+
+/* Resume Section Css */
+.section{
+  margin-top: 50px;
+ }
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.container .profile {
+  height: 30vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0); /* Specify the border style (solid) before the color */
+  background: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  line-height: 23px;
+}
+.container .profile img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+}
+.container .contact{
+  height: 30vh;
+  width: 20%;
+  border-radius: 10px;
+  padding: 20px 10px ;
+  font-size: 16px;
+  text-align: left;
+  border: 1px solid rgb(0, 0, 0); /* Specify the border style (solid) before the color */
+  background: transparent;
+}
+.container .contact h2{
+ text-align: center;
+}
+.container .about{
+  width: 41%;
+  height: fit-content;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0); /* Specify the border style (solid) before the color */
+  background: transparent;
+  display: inline-block;
+}
+.container .about h2{
+  text-align: center;
+}
+.container .about p{
+  margin: 10px 0;
+}
+.education{
+  text-align: left;
+  margin: 10px 0 0;
+}
+.experties{
+  
+}
+
+@media (max-width:1490px) {
+  .container .profile {
+    flex-basis: 30%;
+    font-size: 15px;
+   }
+   .container .contact{
+    flex-basis: 30%;
+    font-size: 15px;
+  }
+   .container .about{
+    flex-basis: 61%;
+    font-size: 15px;
+  }
+}
+@media (max-width:1050px) {
+  .container .profile {
+    flex-basis: 40%;
+    font-size: 14px;
+   }
+   .container .contact{
+    flex-basis: 40%;
+    line-height: 25px;
+    font-size: 14px;
+  }
+   .container .about{
+    flex-basis: 81%;
+    font-size: 14px;
+  }
+}
+@media (max-width:690px) {
+  .container .profile {
+    flex-basis: 50%;
+    font-size: 14px;
+   }
+   .container .contact{
+    width: fit-content;
+    flex-basis: 50%;
+    line-height: 25px;
+    font-size: 12px;
+  }
+   .container .about{
+    height: fit-content;
+    flex-basis: 50%;
+    font-size: 14px;
+  }
+}
+@media (max-width:490px) {
+.section{
+  margin-top: 90px;
+ }
+  .container .profile {
+    height: fit-content;;
+    flex-basis: 86%;
+    font-size: 14px;
+   }
+   .container .contact{
+    width: fit-content;
+    flex-basis: 85%;
+    line-height: 25px;
+    font-size: 12px;
+  }
+   .container .about{
+    height: fit-content;
+    flex-basis: 86%;
+    font-size: 14px;
+  }
+}
+

@@ -1,101 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>adityapages-Aditya Portfilio</title>
-    <link rel="shortcut icon" href="images/aditya.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="navigationbar">
-      <div class="nav">
-        <img src="images/menu.png" alt="" class="menubtn" onclick="Menubtn()" />
-        <img src="images/aditya.png" alt="" class="logo" />
-        <ul id="MenuItems" class="navlinks">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>adityapages-Aditya Portfilio</title>
+  <link rel="shortcut icon" href="images/aditya.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="navigationbar">
+    <div class="nav">
+      <img src="images/menu.png" alt="" class="menubtn" onclick="Menubtn()" />
+      <img src="images/aditya.png" alt="" class="logo" />
+      <ul id="MenuItems" class="navlinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#About">About</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="Resume.html">Resume</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!--  Main Section -->
+  <div class="section">
+    <div class="container">
+      <div class="profile">
+        <img src="images/adityaprofile.png" alt="">
+        <h3>Aditya Mishra</h3>
+        <h2>Web Developer</h2>
+      </div>
+
+      <div class="contact">
+        <h2>Contact Me</h2>
+        <li>88-9845-9845</li>
+        <li>adityakumarmishra@email.com</li>
+        <li>adityamishras.github.io/adityapages</li>
+        <li>Punjab, India</li>
       </div>
     </div>
+  </div>
+
+  <div class="container">
+    <div class="about">
+      <h2>About Me</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia facilis, eligendi et voluptates quo autem eum
+        iure laudantium labore necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo
+        asperiores quasi earum velit nihil? Facere ipsam harum, impedit modi quae nam, cupiditate ea, saepe laborum
+        temporibus asperiores nemo possimus?Eaque laborum optio alias veritatis ut non neque voluptates fugiat.</p>
+    </div>
+  </div>
   
-
-    <!--  Main Section -->
-    <section>
-      <div class="row">
-        <div class="col">
-          <div class="text">
-            Hi, My name is <span>Aditya Mishra</span> <br />and i am a
-            passionate
-            <div><span id="element"></span></div>
-          </div>
+    <div class="container">
+      <div class="profile">
+        <h2>Education</h2>
+        <div class="education">
+          <h3>Computer Science & Engineering</h3>
+          <h4>Punjab Technical University</h4>
+          <small>Continued</small>
+          <h3>Web Designing</h3>
+          <h4>Computer Zone Education Center</h4>
+          <small>2022-2023</small>
         </div>
-        <div class="col">
-          <img src="images/programmers.png" alt="" class="programmer" />
+        
+      </div>
+
+      <div class="contact">
+        <h2>Experties</h2>
+        <div class="experties">
+          <h4>Web Designing</h4>
+          <h4>Responsive Web Designing</h4>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <div class="container">
-            <div class="button"><a href="#">Downlaod CV</a></div>
-            <div class="button"><a href="#">Contact Me</a></div>
-          </div>
-        </div>
+    </div>
+
+    <div class="container">
+      <div class="about">
+        <h2>Work Experience</h2>
+        <h4>Computer Zone</h4>
+        <small>2022-2023</small>
+        <p>I've undergone comprehensive training in front-end development, mastering HTML5, CSS3, PHP, MySql and responsive web design. This training equipped me with the skills to create interactive web applications, ensure accessibility compliance, and optimize web performance. I'm well-prepared to contribute my front-end expertise to a professional work environment.</p>
       </div>
-    </section>
-    <!-- /Introduction Section -->
-    <section class="introduction" id="About">
-      <h1><span>About</span> MySelf</h1>
-      <div class="row">
-        <div class="col">
-          <p>
-            Love to Code because it taught me not to give up ever. Trying my
-            best to proide companies and organization with best modern
-            technologies and serving users contemporary feel in their phone and
-            digital devices along best material of coding and languages I fell
-            in love with Development and coding and I have learned Several
-            things.<br> I am Skilled in
-            <span>Front-end fundamental technologies.</span> <br>My field of
-            intrest's are building Differents types of
-            <span>Web Technologies and Products.</span>
-          </p>
-        </div>
-          <img src="avatar.5852f40fbb38aa284829fa3fb7722225.svg" alt="">
+    </div>
+    
+
+
+
+
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>&copy; Designed & Developed by Aditya Mishra</p>
       </div>
-    </section>
+    </footer>
 
-
-
-
-
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-    <script>
-      var typed = new Typed("#element", {
-        strings: [
-          "<b> Web Developer</b>.",
-          " <b> Content Creater. </b>",
-          " <b> Web Designer. </b>",
-          "<b> Web Developer</b>.",
-          " <b> Content Creater. </b>",
-          " <b> Web Designer. </b>",
-        ],
-        typeSpeed: 40,
-      });
-    </script>
-    <script>
-      var Menuitems = document.getElementById("MenuItems");
-      MenuItems.style.maxHeight = "0px";
-      function Menubtn() {
-        if (Menuitems.style.maxHeight == "0px") {
-          Menuitems.style.maxHeight = "400px";
-        } else {
-          Menuitems.style.maxHeight = "0px";
-        }
+  <script>
+    var Menuitems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function Menubtn() {
+      if (Menuitems.style.maxHeight == "0px") {
+        Menuitems.style.maxHeight = "400px";
+      } else {
+        Menuitems.style.maxHeight = "0px";
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>
